@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assests/lib/normalize%20css.css">
+
+    <style>
+        nav{
+            height: 100vh;
+            width: 500px;
+            padding: 0;
+            align-content: center;
+        }
+        nav>div{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            left: -420px;
+            cursor: pointer;
+            box-shadow: blue 5px 5px 5px;
+
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+
+        i{
+            margin-left: 10px;
+        }
+
+        nav>div:hover{
+            transform: translateX(90px);
+        }
+        nav>div>span{
+            position: absolute;
+            left: 324px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+        <nav>
+            <div>
+                <span>Menu One</span>
+                <i class="fa-solid fa-address-book"></i>
+            </div>
+            <div>
+                <span>Menu Two</span>
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <div>
+                <span>Menu Three</span>
+                <i class="fa-solid fa-book-atlas"></i>
+            </div>
+            <div>
+                <span>Menu Four</span>
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div>
+                <span>Menu Five</span>
+                <i class="fa-solid fa-cart-plus"></i>
+            </div>
+        </nav>
+
+</body>
+</html>
